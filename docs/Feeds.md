@@ -1945,13 +1945,13 @@ server {
 
 * **Status:** on
 * **Revision:** 20-01-2018
-* **Description:** The data are processed and clasified every week and behaviour of IP addresses that accessed a larger number of Turris routers is evaluated. The result is a list of addresses that have tried to obtain information about services on the router or tried to gain access to them. We publish this so called "greylist" that also contains a list of tags for each address which indicate what behaviour of the address was observed.
+* **Description:** The data are processed and clasified every day and behaviour of IP addresses that accessed a larger number of Turris routers is evaluated. The result is a list of addresses that have tried to obtain information about services on the router or tried to gain access to them. We publish this so called "greylist" that also contains a list of tags for each address which indicate what behaviour of the address was observed.
 
 ### Collector
 
 * **Module:** intelmq.bots.collectors.http.collector_http
 * **Configuration Parameters:**
-*  * `http_url`: `https://www.turris.cz/greylist-data/greylist-latest.csv`
+*  * `http_url`: `https://view.sentinel.turris.cz/greylist-data/greylist-latest.csv`
 *  * `name`: `Greylist`
 *  * `provider`: `Turris`
 *  * `rate_limit`: `43200`

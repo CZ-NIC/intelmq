@@ -13,9 +13,7 @@ class TurrisGreylistParserBot(Bot):
 
         columns = [
             "source.ip",
-            "source.geolocation.cc",
-            "event_description.text",
-            "source.asn"
+            "event_description.text"
         ]
 
         headers = True

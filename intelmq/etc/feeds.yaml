@@ -730,7 +730,7 @@ providers:
       documentation:
   Turris:
     Greylist:
-      description: The data are processed and clasified every week and behaviour of
+      description: The data are processed and clasified every day and behaviour of
         IP addresses that accessed a larger number of Turris routers is evaluated.
         The result is a list of addresses that have tried to obtain information about
         services on the router or tried to gain access to them. We publish this so
@@ -741,7 +741,7 @@ providers:
         collector:
           module: intelmq.bots.collectors.http.collector_http
           parameters:
-            http_url: https://www.turris.cz/greylist-data/greylist-latest.csv
+            http_url: https://view.sentinel.turris.cz/greylist-data/greylist-latest.csv
             rate_limit: 43200
             name: __FEED__
             provider: __PROVIDER__
